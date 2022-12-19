@@ -66,13 +66,38 @@ div#login-form p {
 
 form div.login-area {
     background: #3D0000;
-    height: 50px;
-    border-radius: 5px;
+    height: 40px;
+    border: 2px solid #3D0000;
+    border-radius: 9px;
     margin: 5px 0;
 }
 
 form label {
     display: none;
+}
+
+div.login-area span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+div.login-area input {
+    background: #ff9e9e;
+    font-size: 1em;
+    border: none;
+    height: 100%;
+    width: calc(100% - 43px);
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.login-area input:focus {
+    transition: background ease .3s;
+    background: white;
+    outline: none;
 }
 
 form input[type=submit] {
