@@ -4,7 +4,9 @@
 :root {
     --clr-red01: #3D0000; 
     --clr-red02: #950101; 
-    --clr-red03: #FF0000; 
+    --clr-red03: #FF0000;
+    --clr-orange01: #d37f00;
+    --clr-orange02: #ff9900;
 }
 
 *{
@@ -34,7 +36,7 @@ section#login {
     background: white;
     border-radius: 20px;
     width: 250px;
-    height: 500px;
+    height: 520px;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
     transition: width .3s, height .3s;
@@ -60,4 +62,58 @@ div#login-form h1 {
 
 div#login-form p {
     font-size: 0.8em;
+}
+
+form div.login-area {
+    background: #3D0000;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+form label {
+    display: none;
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background: var(--clr-red03);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background ease .3s;
+}
+
+form input[type=submit]:hover {
+    background: var(--clr-red02);
+}
+
+form a.forgetbtn {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    margin-top: 5px;
+    color: var(--clr-orange01);
+    border: 2px solid var(--clr-orange01);
+    border-radius: 7px;
+    text-decoration: none;
+    transition: all ease .3s;
+}
+
+form a.forgetbtn span {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+form a.forgetbtn:hover {
+    background: var(--clr-orange02);
+    border: var(--clr-orange02);
+    color: white;
 }
